@@ -1,0 +1,90 @@
+.slide-item.home-01{background-image:url(../img/slide-home/01.jpg)}
+.slide-item.home-02{background-image:url(../img/slide-home/02.jpg)}
+.slide-item.home-03{background-image:url(../img/slide-home/03.jpg)}
+.slide-item.proyecto-01{background-image:url(../img/slide-proyecto/01.jpg)}
+.slide-item.proyecto-02{background-image:url(../img/slide-proyecto/02.jpg)}
+.slide-item.proyecto-03{background-image:url(../img/slide-proyecto/03.jpg)}
+.slide-item.contacto-01{background-image:url(../img/slide-contacto/01.jpg)}
+.slide-item.contacto-02{background-image:url(../img/slide-contacto/02.jpg)}
+.slide-item.interior-01{background-image:url(../img/slide-proyecto/galeria/122/01.jpg)}
+#home .entrada-grande{position:absolute;width:914px;left:50%;margin-left:-457px;bottom:35%;font-size:70px;font-family:'Montserrat-Medium';color:#fff}
+.firt,.second{height:100%;padding:0;margin:0}
+#proyecto .firt{background-color:rgba(23,131,187,1);padding:5% 20px 0 55px;color:#fff}
+#proyecto h3{margin-top:35%;margin-bottom:7%}
+#proyecto p{text-align:left;padding-right:7%}
+#departamentos .depa{height:100%;background-size:cover;background-position:center}
+#departamentos .depa-detalle{width:100%;position:absolute;bottom:0;left:0;height:400px;padding:51px 0 0 55px}
+.depa-detalle .metros{font-size:70px;font-family:'Montserrat-SemiBold';color:#000;height:105px;margin-bottom:20px}
+.depa-detalle .metros span{font-size:25px}
+.depa-detalle p{font-size:1.2em}
+.depa-detalle ul.list{list-style:none;padding:0;text-transform:uppercase;font-weight:lighter;font-family:'Montserrat-SemiBold';letter-spacing:1px}
+.depa-detalle .vermas{color:#fff;background-color:#000;font-size:25px;padding:5px 10px;width:45px;height:40px;position:absolute;bottom:0;left:0;cursor:pointer}
+.depa-detalle .vermas.fix{left:55px}
+.depa-detalle .metros .separador{position:absolute;width:10%;border-bottom:4px solid #000;height:4px}
+#departamentos .depa01{background-image:url(../img/slide-proyecto/proyecto-01.jpg)}
+#departamentos .depa02{background-image:url(../img/slide-proyecto/proyecto-02.jpg)}
+#departamentos .depa03{background-image:url(../img/slide-proyecto/proyecto-03.jpg)}
+.navegar3d{margin-top:20px}
+.tressesenta{width:100%;height:100%;position:fixed;top:0;left:0;opacity:0;z-index:-1}
+.tressesenta iframe,#iframe360{width:100%;height:100%;position:absolute;top:0;left:0}
+.navegar3D .close-modal{top:30px;right:30px}
+#cotizador{color:#fff;padding-top:20%}
+#form-cotizador{width:750px;display:block;position:relative;margin:30px auto 0}
+.block-input{width:100%;float:left;height:55px}
+.block-input label{text-align:left;text-transform:uppercase;font-size:15px;width:35%;height:100%;padding:10px 0 0 50px}
+.block-input input[type="text"]{float:right;width:60%;background-color:transparent;color:#fff;border:3px solid #fff;height:40px;font-family:'Montserrat-Medium';font-size:15px;text-transform:uppercase;padding:5px}
+.block-input textarea{float:right;width:60%;background-color:transparent;color:#fff;border:3px solid #fff;height:40px;font-family:'Montserrat-Medium';font-size:15px;text-transform:uppercase;padding:5px}
+.block-input .checkboxs-cotizador{width:60%;float:right;height:100%}
+.block-input .checkboxs-cotizador .check-depa{width:30%;float:left;font-size:14px;font-family:'Montserrat-Medium';text-transform:uppercase;height:100%;padding-top:10px}
+#ubicacion{background-image:url(../img/mapa.jpg);background-size:cover;background-position:bottom right}
+#ubicacion .firt{padding:5% 20px 0 55px;color:#fff}
+#ubicacion .second{height:100%}
+#ubicacion h3.margin{margin-top:35%;margin-bottom:7%}
+#ubicacion h3.second-margin{margin-top:15%}
+#contacto .firt{padding:5% 20px 0 55px;color:#fff}
+#contacto h3{margin-top:15%}
+#contacto p{width:80%;margin:30px 0}
+#form-contacto{width:90%}
+#form-contacto .block-input{width:50%;height:90px}
+#form-contacto .block-input.fix{width:100%;height:170px}
+#form-contacto .block-input.fix-btn{width:100%}
+#form-contacto .block-input label{padding-left:0;width:100%;height:35px}
+#form-contacto .block-input input[type="text"]{width:95%;float:left}
+#form-contacto .block-input textarea{width:100%;height:100px;resize:none}
+.bg-122{background-color:rgba(243,224,157,1)}
+.bg-169{background-color:rgba(246,230,169,1)}
+.bg-197{background-color:rgba(247,222,139,1)}
+.close-modal{position:absolute;font-size:30px;cursor:pointer;right:15px;z-index:1}
+.planta{position:absolute;width:100%;height:100%;background-color:#fff;opacity:0;z-index:-1;padding:0 0 0 55px;left:0}
+.planta .pl{height:auto;position:relative;width:840px;margin:0 auto}
+.planta .close-modal{right:25px;top:15px}
+.interior{position:fixed;width:100%;height:100%;background-color:#fff;opacity:0;z-index:-1;padding:0 0 0 55px}
+.interior .firt{padding:20px 20px 20px 0}
+.interior .logo-puntaf img{width:140px}
+.interior .metros{font-size:70px;font-family:'Montserrat-SemiBold';color:#000;height:105px;margin-bottom:20px;margin-top:10%}
+.interior .metros span{font-size:25px}
+.interior .metros .separador{position:absolute;width:10%;border-bottom:4px solid #000;height:4px}
+.interior .box-detalle{width:100%;display:inline-block;margin-bottom:10px}
+.interior .box-detalle .item-detalle{font-family:'Montserrat-Medium';width:50%;float:left;font-size:1em;text-transform:uppercase;height:22px}
+.interior .descripcion{margin-bottom:20%}
+.interior .descripcion h4{font-family:'Montserrat-Bold';font-size:1.2em}
+.interior .descripcion p{font-family:'Montserrat-Medium';font-size:1.2em}
+.interior .interior-detalle{width:100%;height:100%;position:absolute;z-index:1;opacity:1}
+.interior .info-depa{position:absolute;width:100%;height:50%;bottom:40px;padding:20px}
+.interior .ficha{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;z-index:-1}
+.interior .ficha .close-modal{position: absolute;font-size: 30px;cursor: pointer;right: 15px;z-index: 1;top: 10px;}
+.interior h3{margin-bottom:4%}
+.interior .carac{width:50%;height:100%;float:left}
+.interior .carac ul{padding-top:22px}
+.interior .carac ul li{font-family:'Montserrat-Medium';margin-bottom:10%}
+.carac .item{width:100%;height:70px;margin-bottom:8px;float:left}
+.carac .item p{text-transform:uppercase;margin-top:24px;margin-left:10px;width:100%;padding-left:70px}
+.carac .item .icono{width:70px;height:70px;position:relative;float:left;background-size:contain}
+.carac .item .ic-01{background-image:url(../img/icons/vista_al_mar.png)}
+.carac .item .ic-02{background-image:url(../img/icons/piscina.png)}
+.carac .item .ic-03{background-image:url(../img/icons/paisajismo.png)}
+.carac .item .ic-04{background-image:url(../img/icons/estacionamiento_visitas.png)}
+.carac .item .ic-05{background-image:url(../img/icons/multicanchas.png)}
+.carac .item .ic-06{background-image:url(../img/icons/seguridad.png)}
+.carac .item .ic-07{background-image:url(../img/icons/paseo_peatonal.png)}
+.carac .item .ic-08{background-image:url(../img/icons/club_de_yates.png)}
