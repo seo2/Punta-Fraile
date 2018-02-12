@@ -139,6 +139,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
+           
             <div class="menu" data-toogle="close">
                 <div class="hambur" onclick="Fraile.toogleMenu()">
                     <span class="icon-hambur"></span>
@@ -153,12 +154,9 @@
                     <a href="#contacto" class="menu-item" onclick="Fraile.toogleMenu()">Contacto</a>
                 </div>  
             </div>
+            
             <div id="content">
-<!--
-                <div class="logo-puntafraile hidden-xs">
-                    <img src="img/logo.png" class="img-responsive" />
-                </div>
--->
+	            
                 <div id="home" class="seccion">
                     <div class="" id="logo-alcazar">
                         <img src="img/logo-alcazar.svg" class="img-responsive" />
@@ -180,7 +178,11 @@
 <!--                     <div class="btnd azul-01 ease gotocotizar" onclick="Fraile.gotocotizar()">Cotizar Ahora</div> -->
                     <a href="#proyecto" class="flecha-abajo"><img src="img/arrow.png" /></a>
                     <div class="ultimas-unidades hide"></div>
+                    <div id="img360">
+	                    <a href="javascript:void(0)" onclick="Fraile.openmodal('tressesenta')">Imagen 360º</a>
+                    </div>
                 </div>
+                
                 <div id="proyecto" class="seccion">
                     <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1">
                         <div class="slide-proyecto slide">
@@ -211,73 +213,109 @@ garantizando la calidad de la construcción.</p>
                         </div>
                     </div>
                 </div>
+                
                 <div id="departamentos" class="seccion">
-                    <div class="depa01 depa col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="depa-detalle">
-                            <div class="metros">
-                                88 M<span>2 Útiles</span>
-                                <div class="separador"></div>
-                            </div>
-                            <ul class="list">
-                                <li>3 Dormitorios</li>
-                                <li>2 Baños</li>
-                            </ul>
-                            <p>Valores desde UF 9.195<br>hasta UF10.221</p>
-                            <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p>
-                            <div class="vermas fix" onclick="Fraile.openmodal('interior',107)"><span class="icon-plus"></span></div>
-                        </div>
-                    </div>
-                    <div class="depa02 depa col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="depa-detalle">
-                            <div class="metros">
-                                92 M<span>2 Útiles</span>
-                                <div class="separador"></div>
-                            </div>
-                            <ul class="list">
-                                <li>4 Dormitorios</li>
-                                <li>3 Baños</li>
-                            </ul>
-                            <p>Valores desde UF 12.120<br>hasta UF 12.878</p>
-                            <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p>
-                            <div class="vermas" onclick="Fraile.openmodal('interior',138)"><span class="icon-plus"></span></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="cotizador" class="seccion azul-01">
-                    <h3 class="text-uppercase text-center">Cotizar</h3>
-                    <form id="form-cotizador" action="" onsubmit="return false;">
-                        <div class="block-input">
-                            <label>Nombre</label><input type="text" id="cot_nombre" name="cot_nombre" value="">
-                        </div>
-                        <div class="block-input">
-                            <label>apellido</label><input type="text" id="cot_apellido" name="cot_apellido" value="">
-                        </div>
-                        <div class="block-input">
-                            <label>Mail</label><input type="text" id="cot_mail" name="cot_mail" value="">
-                        </div>
-                        <div class="block-input">
-                            <label>Teléfono</label><input type="text" id="cot_telefono" name="cot_telefono" value="">
-                        </div>
-                        <div class="block-input fixmobile-height">
-                            <label>Departamento</label>
-                            <div class="checkboxs-cotizador">
-                                <div class="check-depa">
-                                    <input type="radio" name="cot_depa" id="cot_depa" value="107">
-                                    <span>107 mt2</span>
-                                </div>
-                                <div class="check-depa">
-                                    <input type="radio" name="cot_depa" id="cot_depa" value="138">
-                                    <span>138 mt2 (AGOTADO)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-input">
-                            <div class="mensaje_error pastel-03"></div>
-                            <button type="submit" class="btn pull-right pastel-03 ease">enviar</button>
-                        </div>
-                    </form>
-                </div>
+	                <div class="row cienporcien">
+                    	<div class="col-md-11 cienporcien">
 
+							<div class="depa01 depa col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			                    <div class="row cienporcien">
+			                    	<div class="col-xs-5 cienporcien">
+				                        <div class="depa-detalle">
+				                            <div class="metros">
+				                                88 M<span>2 Útiles</span>
+				                               <!--  <div class="separador"></div> -->
+				                            </div>
+				                            <ul class="list">
+				                                <li>3 Dormitorios</li>
+				                                <li>2 Baños</li>
+				                            </ul>
+				                            <p>Valores desde UF 9.195<br>hasta UF10.221</p>
+				                            <!-- <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p> -->
+				                            <div class="vermas fix" onclick="Fraile.openmodal('interior',107)"><span class="icon-plus"></span></div>
+				                        </div>
+			                    	</div>
+			                    	<div class="col-xs-7 cienporcien">
+			                    		<img src="img/depto1.jpg" class="img-responsive">
+			                    	</div>
+			                    </div>
+		                    </div>
+		                    <div class="depa02 depa col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			                    <div class="row cienporcien">
+			                    	<div class="col-xs-5 cienporcien">
+				                        <div class="depa-detalle">
+				                            <div class="metros">
+				                                92 M<span>2 Útiles</span>
+				                                <!-- <div class="separador"></div> -->
+				                            </div>
+				                            <ul class="list">
+				                                <li>4 Dormitorios</li>
+				                                <li>3 Baños</li>
+				                            </ul>
+				                            <p>Valores desde UF 12.120<br>hasta UF 12.878</p>
+				                            <!-- <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p> -->
+				                            <div class="vermas" onclick="Fraile.openmodal('interior',138)"><span class="icon-plus"></span></div>
+				                        </div>
+			                    	</div>
+			                    	<div class="col-xs-7 cienporcien">
+			                    		<img src="img/depto2.jpg" class="img-responsive">
+			                    	</div>
+			                    </div>
+		                    </div>
+	                    		
+                    	</div>	                	
+	                </div>
+                    
+                </div>
+                
+                <div id="cotizador" class="seccion">
+                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                        <div class="slide-proyecto slide">
+                            <div class="slide-item proyecto-00 activo"></div>
+                        </div>
+                    </div>
+                    <div class="firt col-xs-12 col-sm-12 col-md-5 col-lg-5">
+						<h3 class="text-uppercase">Cotizar</h3>
+	                    <form id="form-cotizador" action="" onsubmit="return false;">
+	                        <div class="block-input">
+	                            <input type="text" id="cot_nombre" name="cot_nombre" placeholder="Nombre">
+	                        </div>
+	                        <div class="block-input">
+	                            <input type="text" id="cot_apellido" name="cot_apellido" placeholder="Apellido">
+	                        </div>
+	                        <div class="block-input">
+	                            <input type="text" id="cot_mail" name="cot_mail" placeholder="Mail">
+	                        </div>
+	                        <div class="block-input">
+	                           	<input type="text" id="cot_telefono" name="cot_telefono" placeholder="Teléfono">
+	                        </div>
+	                        <div class="block-input fixmobile-height" id="seldeptos">
+	                            <label>Departamento</label>
+	                            <div class="checkboxs-cotizador">
+	                                <div class="check-depa bl">
+	                                    <input type="radio" name="cot_depa" id="cot_depa" value="88">
+	                                    <span>88 mt2</span>
+	                                </div>
+	                                <div class="check-depa">
+	                                    <input type="radio" name="cot_depa" id="cot_depa" value="92">
+	                                    <span>92 mt2</span>
+	                                </div>
+	                                <div class="clearfix"></div>
+	                            </div>
+	                        </div>
+	                        <div class="block-input">
+	                            <div class="mensaje_error pastel-03"></div>
+	                            <button type="submit" class="btn pull-right btn-primary ease">enviar</button>
+	                        </div>
+	                    </form>
+                    </div>
+                    <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="slide-proyecto slide">
+                            <div class="slide-item cotizador-01 activo"></div>
+                        </div>
+                    </div>
+                    
+                </div>
 
 				<div id="ubicacion" class="seccion">
                     <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -296,43 +334,7 @@ garantizando la calidad de la construcción.</p>
                         </div>
                     </div>
                 </div>                
-                
-                <!--
-<div id="contacto" class="seccion azul-01">
-                    <div class="firt col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <h3 class="text-uppercase">Contacto</h3>
-                        <p>En Punta Fraile nos preocupa su opinión, ingrese sus datos y nos pondremos en contacto con ud.</p>
-                        <form id="form-contacto" action="" onsubmit="return false;">
-                            <div class="block-input">
-                                <label>Nombre</label><input type="text" name="con_nombre" value="">
-                            </div>
-                            <div class="block-input">
-                                <label>apellido</label><input type="text" name="con_apellido" value="">
-                            </div>
-                            <div class="block-input">
-                                <label>Mail</label><input type="text" name="con_email" value="">
-                            </div>
-                            <div class="block-input">
-                                <label>Teléfono</label><input type="text" name="con_telefono" value="">
-                            </div>
-                            <div class="block-input fix">
-                                <label>Comentario</label>
-                                <textarea name="con_comentario" id="con_comentario" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="block-input fix-btn">
-                                <div class="mensaje_error verde-02"></div>
-                                <button type="submit" class="btn pull-right verde-02 ease">enviar</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="slide-contacto">
-                            <div class="slide-item contacto-01 activo"></div>
-                        </div>
-                    </div>
-                </div>
--->
-                
+
                 <footer>
 	                <img src="img/linea.png">
 	                <p class="redes"><a href=""><i class="fab fa-facebook-f"></i></a> <a href=""><i class="fab fa-instagram"></i></a></p>
@@ -348,8 +350,11 @@ garantizando la calidad de la construcción.</p>
 	                <img src="img/linea.png">
 	                <h1>Punta Fraile</h1>
                 </footer>
+                
                 <div class="redes1"><a href=""><i class="fab fa-facebook-f"></i></a> <a href=""><i class="fab fa-instagram"></i></a></div>
+            
             </div><!-- content -->
+            
             <div class="tressesenta navegar3D">
                 <div class="close-modal" onclick="Fraile.closemodal('tressesenta')"><span class="icon-close"></span></div>
                 <iframe id="iframe360" src="//www.lanube360.com/punta-fraile/" border=0></iframe>
