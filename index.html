@@ -14,6 +14,9 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>PUNTA FRAILE</title>
         <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://use.typekit.net/czq2svy.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
         <style>
             /*!
              * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -23,16 +26,11 @@
             /*# sourceMappingURL=bootstrap.min.css.map */
             /* cyrillic-ext */
             @font-face{font-family:'icomoon';src:url(fonts/IcoMoon-Free.ttf) format("truetype");font-weight:400;font-style:normal}
-            @font-face{font-family:'Montserrat-Medium';src:url(fonts/Montserrat/Montserrat-Medium.eot)}
-            @font-face{font-family:'Montserrat-Medium';src:url(fonts/Montserrat/Montserrat-Medium.woff) format("woff"),url(fonts/Montserrat/Montserrat-Medium.svg#Montserrat-Medium) format("svg")}
-            @font-face{font-family:'Montserrat-Bold';src:url(fonts/Montserrat/Montserrat-Bold.eot)}
-            @font-face{font-family:'Montserrat-Bold';src:url(fonts/Montserrat/Montserrat-Bold.woff) format("woff"),url(fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold) format("svg")}
-            @font-face{font-family:'Montserrat-SemiBold';src:url(fonts/Montserrat/Montserrat-SemiBold.eot)}
-            @font-face{font-family:'Montserrat-SemiBold';src:url(fonts/Montserrat/Montserrat-SemiBold.woff) format("woff"),url(fonts/Montserrat/Montserrat-SemiBold.svg#Montserrat-SemiBold) format("svg")}
+
             body,html{
                 font-size: 12px;
                 font-weight: lighter;
-                background-color: rgb(16,16,16);
+                background-color: #fff;
                 color: #000;
                 width: 100%;
                 height: 100%;
@@ -50,10 +48,10 @@
             }
            .ease{transition:.3s ease;-webkit-transition:.3s ease}
            /* critical path */
-           .menu{background-color:#439cc4;padding:20% 0 0 55px;position:fixed;width:350px;height:100%;top:0;left:-400px;z-index:10;font-size:26px;color:#fff}
-            .menu .hambur{background-color:#439cc4;padding:0 0 0 10px;position:fixed;width:45px;height:34px;top:20px;left:0;z-index:10;font-size:26px;cursor:pointer;color:#fff}
-            .menu .menu-item{margin-bottom:10px;text-transform:uppercase;font-family:'Montserrat-Medium';font-size:24px;font-weight:lighter;letter-spacing:1px;height:50px;color:#fff;text-decoration:none;width:100%;float:left;cursor:pointer}
-            .mensaje_error{position:relative;float:left;padding:9px 20px 6px 50px;height:39px;opacity:0;font-family:'Montserrat-SemiBold';font-size:13px;text-transform:uppercase;letter-spacing:1px;border-radius:0 5px 5px 0;text-align:center}
+           .menu{background-color:#439cc4;padding:20% 0 0 55px;position:fixed;width:350px;height:100%;top:0;right:-400px;z-index:10;font-size:26px;color:#fff}
+            .menu .hambur{padding:0 0 0 10px;position:fixed;width:45px;height:34px;top:20px;right:0;z-index:10;font-size:26px;cursor:pointer;color:#d4dce4;}
+            .menu .menu-item{margin-bottom:10px;text-transform:uppercase;font-family:'brandon-grotesque';font-size:24px;font-weight:lighter;letter-spacing:1px;height:50px;color:#fff;text-decoration:none;width:100%;float:left;cursor:pointer}
+            .mensaje_error{position:relative;float:left;padding:9px 20px 6px 50px;height:39px;opacity:0;font-family:'brandon-grotesque';font-size:13px;text-transform:uppercase;letter-spacing:1px;border-radius:0 5px 5px 0;text-align:center}
             .azul-01{background-color:rgba(23,131,187,1)}
             .verde-01{background-color:#6dc4c1}
             .verde-02{background-color:#439cc4}
@@ -76,9 +74,9 @@
             #content{position:absolute;width:100%;float:left}
             .seccion{position:relative;width:100%;height:100%;float:left;overflow:hidden}
             .logo-puntafraile{width:224px;height:147px;position:fixed;left:50%;margin-left:-112px;z-index:2;top:45px}
-            .btn{padding:10px 50px;color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:16px;border-radius:0;position:relative;display:block;font-family:'Montserrat-Medium'}
+            .btn{padding:10px 50px;color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:16px;border-radius:0;position:relative;display:block;font-family:'brandon-grotesque'}
             .button-group{width:120%;height:41px;position:relative;z-index:1;margin:30px 0}
-            .btnd{text-align:center;width:33.33%;float:left;padding:10px;font-size:1em;color:#fff;text-transform:uppercase;letter-spacing:2px;cursor:pointer;font-family:'Montserrat-Medium'}
+            .btnd{text-align:center;width:33.33%;float:left;padding:10px;font-size:1em;color:#fff;text-transform:uppercase;letter-spacing:2px;cursor:pointer;font-family:'brandon-grotesque'}
             .btnd.pastel{border:1px solid rgba(214,197,137,1)}
             .btnd.pastel-01{border:1px solid rgba(243,224,157,1)}
             .btnd.azul-01{border:1px solid rgba(23,131,187,1)}
@@ -90,13 +88,13 @@
             .btn.verde-02:hover{background-color:#fff;color:#439cc4}
             .btn.pastel-03{border:1px solid rgba(247,222,139,1)}
             .btn.pastel-03:hover{background-color:#fff;color:rgba(247,222,139,1)}
-            p{font-family:'Montserrat-Medium'}
-            h3{font-family:'Montserrat-Bold'}
+            p{font-family:'brandon-grotesque'}
+            h3{font-family:'brandon-grotesque'}
             .scroll-content{height:67%;width:90%;overflow-y:scroll}
-            .slide-home,.slide-proyecto,.slide-contacto,.slide-interior{widows:100%;height:100%;position:relative}
+            .slide-home,.slide-proyecto,.slide-contacto,.slide-interior{widows:100%;height:100%;position:relative; overflow: hidden;}
             .slide-item{width:100%;height:100%;position:absolute;background-size:cover;background-position:center;opacity:0}
             .slide-item.activo{opacity:1}
-            .bg-fijo{position: absolute;top: 0px;left: 0px;background-image: url(img/trama02.png);background-repeat: repeat;opacity: .3;z-index: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,.2);}
+            .bg-fijo{position: absolute;top: 0px;left: 0px;opacity: .3;z-index: 0;width: 100%;height: 100%;}
             .gotocotizar{
                 position: absolute;
                 bottom: 25%;
@@ -123,7 +121,7 @@
                 background-size: cover;
             }
         </style>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.css?v=2" rel="stylesheet">
         <link href="css/media-queries.css" rel="stylesheet">
 
 <script>
@@ -156,32 +154,56 @@
                 </div>  
             </div>
             <div id="content">
+<!--
                 <div class="logo-puntafraile hidden-xs">
                     <img src="img/logo.png" class="img-responsive" />
                 </div>
+-->
                 <div id="home" class="seccion">
-                    <div class="logo-puntafraile-mobile visible-xs">
-                        <img src="img/logo.png" class="img-responsive" />
+                    <div class="" id="logo-alcazar">
+                        <img src="img/logo-alcazar.svg" class="img-responsive" />
                     </div>
                     <div class="slide-home slide">
-                        <div class="slide-item home-01 activo"></div>
+                        <div class="slide-item home-01 activo">
+							<video controls="controls"  autoplay="autoplay" poster="videos/loop.jpg" style="width:100%" loop="loop">
+								<source src="videos/loop.m4v" type="video/mp4" />
+								<source src="videos/loop.webm" type="video/webm" />
+								<source src="videos/loop.mp4" />
+							</video>
+        
+                        </div>
                         <div class="slide-item home-02"></div>
                         <div class="slide-item home-03"></div>
                     </div>
                     <div class="bg-fijo"></div>
-                    <div class="entrada-grande text-uppercase text-center">una oportunidad<br/>de vida real</div>
-                    <div class="btnd azul-01 ease gotocotizar" onclick="Fraile.gotocotizar()">Cotizar Ahora</div>
+                    <div class="entrada-grande text-uppercase">una<br>oportunidad<br/>de vida<br>real</div>
+<!--                     <div class="btnd azul-01 ease gotocotizar" onclick="Fraile.gotocotizar()">Cotizar Ahora</div> -->
                     <a href="#proyecto" class="flecha-abajo"><img src="img/arrow.png" /></a>
-                    <div class="ultimas-unidades"></div>
+                    <div class="ultimas-unidades hide"></div>
                 </div>
                 <div id="proyecto" class="seccion">
-                    <div class="firt col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                        <div class="slide-proyecto slide">
+                            <div class="slide-item proyecto-00 activo"></div>
+                        </div>
+                    </div>
+                    <div class="firt col-xs-12 col-sm-12 col-md-5 col-lg-5">
                         <h3 class="text-uppercase">Proyecto</h3>
-                        <p>Ubicados en el Algarrobo tradicional, Punta Fraile se levanta para entregar una oportunidad de vida ideal, en medio de un espectacular entorno, con el mar como protagonista y áreas verdes que rodean una arquitectura de gran calidad.</p>
-                        <p>Un proyecto que se caracteriza por sus excelentes terminaciones en su interior, garantizando la calidad de la construcción.</p>
-                        <p>Punta Fraile es una invitación a un nuevo espacio que se abre para la familia donde se encontrará el relajo y el descanso que se busca.</p>    
+                        <p>Ubicados en el Algarrobo tradicional,<br>
+Punta Fraile se levanta para entregar una oportunidad de vida ideal,<br>
+ en medio de un espectacular entorno, con el mar como<br>
+protagonista y áreas verdes que rodean una<br>
+arquitectura de gran calidad.
+
+</p>
+                        <p>Un proyecto que se caracteriza por sus<br>
+excelentes terminaciones en su interior,<br>
+garantizando la calidad de la construcción.</p>    
+						<a href="javascript:void(0);" class="btn btn-primary ease">Ver plantas</a>
+<!--
                         <div class="btnd pastel navegar3d pull-left" onclick="Fraile.openmodal('tressesenta')">Navegar vista 360</div>
                         <div class="btnd pastel ease navegar3d" onclick="location.href='https://www.youtube.com/embed/iouylFHKZ6Y';">Ver avances</div>
+-->
                     </div>
                     <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="slide-proyecto slide">
@@ -193,14 +215,14 @@
                     <div class="depa01 depa col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="depa-detalle">
                             <div class="metros">
-                                107 M<span>2 Útiles</span>
+                                88 M<span>2 Útiles</span>
                                 <div class="separador"></div>
                             </div>
                             <ul class="list">
                                 <li>3 Dormitorios</li>
                                 <li>2 Baños</li>
                             </ul>
-                            <p>Valores desde UF 9.195 hasta UF10.221</p>
+                            <p>Valores desde UF 9.195<br>hasta UF10.221</p>
                             <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p>
                             <div class="vermas fix" onclick="Fraile.openmodal('interior',107)"><span class="icon-plus"></span></div>
                         </div>
@@ -208,14 +230,14 @@
                     <div class="depa02 depa col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="depa-detalle">
                             <div class="metros">
-                                138 M<span>2 Útiles (AGOTADO)</span>
+                                92 M<span>2 Útiles</span>
                                 <div class="separador"></div>
                             </div>
                             <ul class="list">
                                 <li>4 Dormitorios</li>
                                 <li>3 Baños</li>
                             </ul>
-                            <p>Valores desde UF 12.120 hasta UF 12.878</p>
+                            <p>Valores desde UF 12.120<br>hasta UF 12.878</p>
                             <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p>
                             <div class="vermas" onclick="Fraile.openmodal('interior',138)"><span class="icon-plus"></span></div>
                         </div>
@@ -255,17 +277,28 @@
                         </div>
                     </form>
                 </div>
-                <div id="ubicacion" class="seccion verde-01">
-                    <div class="firt col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <h3 class="text-uppercase text-left margin">Ubicación</h3>
-                        <p>Ubicado en el Algarrobo tradicional a sólo 1 hora y 30 minutos de Santiago. El proyecto se encuentra a pasos de la playa, la Cofradía Náutica del Pacífico, y el club de Yates. Presenta dos accesos, uno vehicular por Av. El Canelo, y uno peatonal por Almirante José Toribio Merino Castro.</p>
+
+
+				<div id="ubicacion" class="seccion">
+                    <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="slide-proyecto slide">
+                            <div class="slide-item ubicacion-01 activo"></div>
+                        </div>
+                    </div>
+                    <div class="firt col-xs-12 col-sm-12 col-md-5 col-lg-5">
                         <h3 class="text-uppercase text-left second-margin">Dirección</h3>
                         <p>Paseo Peatonal, Almirante José Toribio Merino Castro Nº 3500.<br/>Algarrobo, V Región - Chile.</p>
                         <p>(56-2) 2433 77 00</p>
                     </div>
-                    <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
-                </div>
-                <div id="contacto" class="seccion azul-01">
+                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                        <div class="slide-proyecto slide">
+                            <div class="slide-item ubicacion-00 activo"></div>
+                        </div>
+                    </div>
+                </div>                
+                
+                <!--
+<div id="contacto" class="seccion azul-01">
                     <div class="firt col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <h3 class="text-uppercase">Contacto</h3>
                         <p>En Punta Fraile nos preocupa su opinión, ingrese sus datos y nos pondremos en contacto con ud.</p>
@@ -298,6 +331,24 @@
                         </div>
                     </div>
                 </div>
+-->
+                
+                <footer>
+	                <img src="img/linea.png">
+	                <p class="redes"><a href=""><i class="fab fa-facebook-f"></i></a> <a href=""><i class="fab fa-instagram"></i></a></p>
+	                <p class="menu2">
+		                <a href="">INICIO</a> • 
+		                <a href="">PROYECTO</a> • 
+		                <a href="">GALERIA</a> • 
+		                <a href="">ESPACIOS</a> • 
+		                <a href="">COTIZAR</a><br>
+		                <a href="">CONTACTO</a> • 
+						<a href="">CONTACTO</a>
+					</p>
+	                <img src="img/linea.png">
+	                <h1>Punta Fraile</h1>
+                </footer>
+                <div class="redes1"><a href=""><i class="fab fa-facebook-f"></i></a> <a href=""><i class="fab fa-instagram"></i></a></div>
             </div><!-- content -->
             <div class="tressesenta navegar3D">
                 <div class="close-modal" onclick="Fraile.closemodal('tressesenta')"><span class="icon-close"></span></div>

@@ -206,7 +206,7 @@ var Fraile = {
 				}
 			});	
 			if(state == 'close'){
-				Fraile.tlmenu.to(menu, .4,{left: 0, ease: Quad.easeOut });
+				Fraile.tlmenu.to(menu, .4,{right: 0, ease: Quad.easeOut });
 			} else {
 				Fraile.tlmenu.reverse();
 			}
