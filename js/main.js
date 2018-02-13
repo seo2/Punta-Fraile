@@ -78,13 +78,13 @@ var ScrollAnims = {
 };
 
 var depto = {
-	activo: 107,
-	"107": {
+	activo: 88,
+	"88": {
 		titulo: 'Exquisito departamento  con espacios pensados para compartir en familia.',
 		items: ['3 dormitorios','2 baños','walk in closet','terraza'],
 		descripcion: 'Living comedor con piso PVC, agradable terraza,  cocina con muebles con cubierta de cuarzo y piso de porcelanto y calefacción independiente con radiadores.'
 	},
-	"138": {
+	"92": {
 		titulo: 'Exquisito departamento  con espacios pensados para compartir en familia.',
 		items: ['4 dormitorios','3 baños','walk in closet','2 terrazas'],
 		descripcion: 'Living comedor con piso PVC, agradable terraza,  cocina con muebles con cubierta de cuarzo y piso de porcelanto y calefacción independiente con radiadores.'
@@ -93,6 +93,8 @@ var depto = {
 
 var scrollDown = false,
 	scrollend = true;
+
+var donde;
 
 var Fraile = {
 	firstAdjust: false,
@@ -107,80 +109,15 @@ var Fraile = {
 	},
 	init: function(){
 		Fraile.adjust();
-		/*
-		var slide = new SlideController({
-			id: '#home',
-			container: '.slide',
-			childrens: '.slide-item',
-			autoslide: true,
-			callback: Fraile.animslide
-		});
-		*/
-		/*
-		var slideProyecto = new SlideController({
-			id: '#proyecto',
-			container: '.slide',
-			childrens: '.slide-item',
-			autoslide: true,
-			callback: Fraile.animslide
-		});
-		*/
+		
 		if(!mobile){
 			$(window).on('resize', function(){
 				Fraile.adjust();
 			});	
 			
-			/*
-			window.addEventListener('wheel', function(e){
-				e.preventDefault();
-				if(!scrollDown){
-					var wDelta = e.deltaY < 0 ? 'up' : 'down';
-					setTimeout(function(){
-						//Fraile.scrollTo('#proyecto');
-					}, 250);
-				}
-			});
-			*/
 		}
 		
-		/*
-		$.each(ScrollAnims, function(v,i){
-			TweenMax.set($("#"+v+" .content-seccion h3"), i.h.from);
-			TweenMax.set($("#"+v+" .content-seccion p"), i.p.from);
-
-			var scene = new ScrollMagic.Scene({
-					triggerElement: '#'+v,
-					offset: (mobile) ? -($(window).innerHeight()*0.1) : -($(window).innerWidth()*0.1),
-					duration: (mobile) ? $("#"+v).innerHeight()+(($(window).innerHeight()*0.2)) : $(window).innerWidth()
-				})
-				.on('enter', function(){
-					if(!mobile){
-						Fraile.playSeccionVideo(v);
-						Fraile.marcamenu(v);	
-					}
-					
-					if(!i.timeline){
-						i.timeline = new TimelineMax();
-						i.timeline.fromTo($("#"+v+" .content-seccion h3"), i.time, i.h.from,i.h.to);
-						i.timeline.fromTo($("#"+v+" .content-seccion p"), i.time, i.p.from,i.p.to,"-=.3");
-						i.timeline.staggerFromTo([$("#"+v+" .box-video"),$("#"+v+" .box-imagen")], i.time, {scale: .8, opacity: 0},{scale: 1, opacity: 1, transformOrigin: "center center", ease: Quad.easeOut},.2, "-=.4");
-					} else {
-						i.timeline.play();
-					}
-				})
-				.on("leave", function (event) {
-					i.timeline.reverse();
-					if(!mobile){
-						if(i.returnTo != 'cx5'){
-							Fraile.reverseVideo(i.returnTo);	
-						}
-						Fraile.marcamenu(i.returnTo);	
-					}
-				})
-				//.addIndicators(v)
-				.addTo(controller);
-		});
-		*/
+		
 
 	},
 	tlmenu: false,
@@ -252,16 +189,15 @@ var Fraile = {
 
 	},
 	openmodal: function(cual,objeto){
-		TweenMax.fromTo($("."+cual),.3,{scale: .7, opacity: 0},{opacity: 1, scale: 1, zIndex: 9, transformOrigin: "center center", ease: Quad.easeOut });
-		if(cual == 'interior'){
+		donde = cual;
+		TweenMax.fromTo($("."+cual),.3,{scale: .7, opacity: 0},{opacity: 1, scale: 1, zIndex: 100, transformOrigin: "center center", ease: Quad.easeOut });
+		if(cual == 'interior' || cual == 'planta'){
 			Fraile.cargaInfo(objeto);
 		}
 	},
 	closemodal: function(cual,objeto){
 		TweenMax.to($("."+cual),.3,{opacity: 0, scale: .7, zIndex: -1, ease: Quad.easeOut });
-		if(cual == 'planta'){
-			$(".planta img").addClass('hide');
-		}
+
 	},
 	cargaInfo: function(objeto){
 		depto.activo = objeto;
@@ -308,7 +244,7 @@ var Fraile = {
 	},
 	gotocotizar: function(){
 		Fraile.closemodal('interior');
-		//$(".menu .list-menu a:nth-child(3)").trigger("click");
+
 		$(window).scrollTop(window.innerHeight*3);
 		$("input[name='cot_depa[]']").attr("checked",false);
 		$("input[name='cot_depa[]'][value='"+depto.activo+"']").attr("checked",true);
@@ -320,13 +256,7 @@ var Fraile = {
     		if(!mobile){
     			var top = -($(".seccion").innerWidth() * number);
     			window.scrollTo(top, 0);
-    			/*
-				TweenMax.to(window,1,{scrollTo: top, ease: Linear.easeOut,
-					onComplete: function(){
-						scrollend = true;
-					}
-				});	
-				*/
+
     		}else{
     			Fraile.toogleMenu();
     			var seccions = $(".seccion");
@@ -395,8 +325,7 @@ $("#form-cotizador").validate({
 		}
   	},
   	errorPlacement: function(){
-  		// console.log('error placemnet');
-  		// console.log('error placemnet');
+
   	},
   	invalidHandler: function(event, validator) {
   		//console.log(event,validator);
@@ -467,11 +396,10 @@ $("#form-contacto").validate({
 		}
   	},
   	errorPlacement: function(){
-  		//console.log('error placemnet');
-  		//console.log('error placemnet');
+  		
   	},
   	invalidHandler: function(event, validator) {
-  		//console.log(event,validator);
+
 	   	if(validator.errorList.length == validator.currentElements.length){
 	    	console.log('Error 01');
 	    	Fraile.onError('#form-contacto','Todos los campos son obligatorios');
@@ -501,33 +429,23 @@ $("#form-contacto").validate({
 });
 
 $(function(){
-	//alert(window.innerWidth+" "+window.innerHeight);
+
     Fraile.init();
-	/*
-	$('body').on('mousewheel', function(event) {
-    	if(scrollend){
-    		scrollend = false;
-    		var content = $('#content');
-    		var l = content.position().left;
-			var obligatoryLeft = $(".seccion").innerWidth();
-    		var direction = (event.deltaY > 0) ? 1 : -1;
-    		var gotoleft = l + (direction*obligatoryLeft);
-			
-			// esto funciona para avanzar
-			if(gotoleft <= 0 && Math.abs(gotoleft) <= (content.innerWidth()-obligatoryLeft)){
-				TweenMax.to(content,1,{left: gotoleft, ease: Linear.easeOut,
-					onComplete: function(){
-						scrollend = true;
-						scrollcount = 0;
-						console.log('complete: ',scrollend);
-					}
-				});	
-			}else{
-				scrollend = true;
-			}
-    	}
-    	
-    	event.preventDefault();
-    });
-	*/
+
 });
+
+$(document).keyup(function(e) {
+     if (e.keyCode == 27) { // escape key maps to keycode `27`
+        console.log(donde);
+        Fraile.closemodal(donde);
+    }
+});
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+	dots:true,
+	autoplay: true,
+	autoplayTimeout: 3000
+})

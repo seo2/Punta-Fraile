@@ -36,7 +36,7 @@
     	padding: 1% 0px 0% 11px;
 	}
 	#proyecto .second{
-		display: none;
+
 		height: 50%;
 	}
 	#proyecto h3{
@@ -244,3 +244,35 @@
     	padding: 20px 0px 0px 10px;
 	}
 }
+
+
+@media (max-width: 767px){
+	#logo-alcazar { position: absolute; top: 2%; left: 5%; width: 65%; }
+	#ubicacion, #departamentos, #home{border: none;}
+	#cotizador, #departamentos{ padding: 20px 0;}
+	.slide-item.home-01{height: 90%; background-image: url(../img/video.gif); background-repeat:  no-repeat;}
+	#home video{height: 100%; margin-left: -140%;}
+	#img360 { bottom: 8%; right: 50%; }
+	#proyecto .firt{height: 70%;}
+	#proyecto .firt h3{margin-left: 0;letter-spacing: 10px; margin-top: 0;}
+	#proyecto .second{height: 30%;}
+	.btn-primary{width: calc(100% - 11px); }
+	#departamentos .depa-detalle{padding: 0; margin-top: 0;}
+	.depa-detalle .metros{ width: 180%; right: 0;  font-size: 50px; height: auto; }
+	.deptoinfo{padding-right: 0;}
+	.botonera-depto { position: absolute; bottom: 20px; left: calc( -100% + 5px); width: 200%; }
+	.botonera-depto .btn-secondary { border: 1px solid #000;}
+	.block-input { height: auto; margin-bottom: 5px; width: 100%; }
+	.block-input input[type="text"] { width: 80%; border-bottom: 1px solid #656565; }
+	.block-input.fixmobile-height { height: auto }
+	#seldeptos{width: 80%;}
+	#cotizador .btn-primary{width: 80%; float: none !important; clear: both;}
+	#ubicacion .firt{height: 50%}
+	#ubicacion .second {height: 50%; }
+	#ubicacion h3{letter-spacing: 10px;}
+	
+}
+
+
+
+

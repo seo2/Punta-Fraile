@@ -46,49 +46,25 @@
                 -webkit-font-smoothing:antialiased;
                 -moz-osx-font-smoothing:grayscale
             }
-           .ease{transition:.3s ease;-webkit-transition:.3s ease}
-           /* critical path */
-           .menu{background-color:#d4dce4; padding:20% 0 0 55px; position:fixed; width:350px; height:100%; top:0; right:-400px; z-index:10; font-size:26px; color:#5b5b5e;}
-            .menu .hambur{padding:0 0 0 10px;position:fixed;width:45px;height:34px;top:40px;right:40px;z-index:10;font-size:26px;cursor:pointer;color:#d4dce4;}
-            .menu .hambur .icon-close{color:#5b5b5e;}
-            .menu .menu-item{margin-bottom:10px;text-transform:uppercase;font-family:'brandon-grotesque';font-size:24px;font-weight:lighter;letter-spacing:1px;height:50px;color:#5b5b5e;text-decoration:none;width:100%;float:left;cursor:pointer}
-            .mensaje_error{position:relative;float:left;padding:9px 20px 6px 50px;height:39px;opacity:0;font-family:'brandon-grotesque';font-size:13px;text-transform:uppercase;letter-spacing:1px;border-radius:0 5px 5px 0;text-align:center}
-            .azul-01{background-color:rgba(23,131,187,1)}
-            .verde-01{background-color:#6dc4c1}
-            .verde-02{background-color:#439cc4}
-            .pastel{background-color:rgba(214,197,137,1)}
-            .pastel-01{background-color:rgba(243,224,157,1)}
-            .pastel-02{background-color:rgba(246,230,169,1)}
-            .pastel-03{background-color:rgba(247,222,139,1)}
+			.ease{transition:.3s ease;-webkit-transition:.3s ease}
+
+
+
             .social{position:absolute;top:0;right:12px;font-size:20px;padding:22px 0 0;width:160px}
-            .icon-telefono:before{content:"\e942"}
-            .icon-Facebook:before{content:"\ea90"}
-            .icon-Twitter:before{content:"\ea96"}
-            .icon-Youtube:before{content:"\ea9d"}
-            .icon-instagram:before{content:"\ea92"}
-            .icon-vergaleria:before{content:"\E90D"}
-            .icon-bars:before{content:'\EC6D'}
-            .icon-hambur:before{content:'\E9BD'}
-            .icon-plus:before{content:'\EA0A'}
-            .icon-close:before{content:'\EA0F'}
+
             .trama{position:absolute;z-index:1}
             #content{position:absolute;width:100%;float:left}
             .seccion{position:relative;width:100%;height:100%;float:left;overflow:hidden}
-            .logo-puntafraile{width:224px;height:147px;position:fixed;left:50%;margin-left:-112px;z-index:2;top:45px}
+            .logo-puntafraile{ width: 6%;
+			    height: auto;
+			    position: fixed;
+			    left: 50%;
+			    margin-left: -3%;
+			    z-index: 2;
+			    top: 1%;
+		    }
             .btn{padding:10px 50px;color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:16px;border-radius:0;position:relative;display:block;font-family:'brandon-grotesque'}
-            .button-group{width:120%;height:41px;position:relative;z-index:1;margin:30px 0}
-            .btnd{text-align:center;width:33.33%;float:left;padding:10px;font-size:1em;color:#fff;text-transform:uppercase;letter-spacing:2px;cursor:pointer;font-family:'brandon-grotesque'}
-            .btnd.pastel{border:1px solid rgba(214,197,137,1)}
-            .btnd.pastel-01{border:1px solid rgba(243,224,157,1)}
-            .btnd.azul-01{border:1px solid rgba(23,131,187,1)}
-            .btnd:hover{text-decoration:none}
-            .btnd.pastel:hover{background-color:#fff;color:rgba(214,197,137,1)}
-            .btnd.pastel-01:hover{background-color:#fff;color:rgba(243,224,157,1)}
-            .btnd.azul-01:hover{background-color:#fff;color:rgba(23,131,187,1)}
-            .btn.verde-02{border:1px solid #439cc4}
-            .btn.verde-02:hover{background-color:#fff;color:#439cc4}
-            .btn.pastel-03{border:1px solid rgba(247,222,139,1)}
-            .btn.pastel-03:hover{background-color:#fff;color:rgba(247,222,139,1)}
+
             p{font-family:'brandon-grotesque'}
             h3{font-family:'brandon-grotesque'}
             .scroll-content{height:67%;width:90%;overflow-y:scroll}
@@ -96,22 +72,7 @@
             .slide-item{width:100%;height:100%;position:absolute;background-size:cover;background-position:center;opacity:0}
             .slide-item.activo{opacity:1}
             .bg-fijo{position: absolute;top: 0px;left: 0px;opacity: .3;z-index: 0;width: 100%;height: 100%;}
-            .gotocotizar{
-                position: absolute;
-                bottom: 25%;
-                left: 50%;
-                margin-left: -200px;
-                width: 400px;
-                font-size: 1.3em;
-            }
-            .flecha-abajo{
-                width: 100px;
-                height: 20px;
-                position: absolute;
-                left: 50%;
-                margin-left: -50px;
-                bottom: 12%;
-            }
+
             .ultimas-unidades{
                 position: absolute;
                 top: 0px;
@@ -122,8 +83,6 @@
                 background-size: cover;
             }
         </style>
-        <link href="css/owl.carousel.min.css?v=2" rel="stylesheet">
-        <link href="css/owl.theme.default.min.css?v=2" rel="stylesheet">
         <link href="css/style.css?v=2" rel="stylesheet">
         <link href="css/media-queries.css" rel="stylesheet">
 
@@ -143,363 +102,48 @@
     <div class="container-fluid">
         <div class="row">
            
-            <div class="menu" data-toogle="close">
-                <div class="hambur" onclick="Fraile.toogleMenu()">
-                    <span class="icon-hambur"></span>
-<!--                     <img src="img/logo.png" class="logo-header-mobile visible-xs" /> -->
-                    <span class="icon-close hide"></span>
-                </div>
-                <div class="list-menu">
-                    <a href="#proyecto" 		class="menu-item" onclick="Fraile.toogleMenu()">Proyecto</a>
-                    <a href="#departamentos" 	class="menu-item" onclick="Fraile.toogleMenu()">Departamentos</a>
-                    <a href="#cotizador" 		class="menu-item" onclick="Fraile.toogleMenu()">Cotizador</a>
-                    <a href="#ubicacion" 		class="menu-item" onclick="Fraile.toogleMenu()">Ubicacion</a>
-<!--                     <a href="#contacto" 		class="menu-item" onclick="Fraile.toogleMenu()">Contacto</a> -->
-                </div>  
-            </div>
             
             <div id="content">
+                <div class="logo-puntafraile hidden-xs">
+                    <img src="img/logo.png" class="img-responsive" />
+                </div>
 	            
-                <div id="home" class="seccion">
-                    <div class="" id="logo-alcazar">
-                        <img src="img/logo-alcazar.svg" class="img-responsive" />
+                <div id="portada" class="seccion">
+                    <div class="row cienporcien">
+                    	<a href="index.html" class="col-sm-6 cienporcien homepad1 ease">
+		                    <div class="slide-home slide">
+		                        <div class="slide-item home-01 activo">
+		        
+		                        </div>
+		                    </div>
+		                    <img src="img/txt-intro1.svg" id="txt1">
+                    	</a>
+                    	<a href="/index.html" class="col-sm-6 cienporcien homepad2 ease">
+		                    <div class="slide-home slide">
+		                        <div class="slide-item home-01 activo">
+		        
+		                        </div>
+		                    </div>
+		                    <img src="img/txt-intro2.svg" id="txt2">
+                    	</a>
                     </div>
-                    <div class="slide-home slide">
-                        <div class="slide-item home-01 activo">
-							<video controls="controls"  autoplay="autoplay" poster="videos/loop.jpg"  loop="loop" class="hidden-xs" >
-								<source src="videos/loop.m4v" type="video/mp4" />
-								<source src="videos/loop.webm" type="video/webm" />
-								<source src="videos/loop.mp4" />
-							</video>
-        
-                        </div>
-                    </div>
-<!--                     <div class="bg-fijo"></div> -->
-                    <div class="entrada-grande text-uppercase">una<br>oportunidad<br/>de vida<br>real</div>
-<!--                     <div class="btnd azul-01 ease gotocotizar" onclick="Fraile.gotocotizar()">Cotizar Ahora</div> -->
-<!--                     <a href="#proyecto" class="flecha-abajo"><img src="img/arrow.png" /></a> -->
+
+
                     <div class="ultimas-unidades hide"></div>
 <!--
                     <div id="img360">
-	                    <a href="javascript:void(0)" onclick="Fraile.openmodal('tressesenta')">Imagen 360º</a>
+	                    <a href="index.html" >Entrar</a>
                     </div>
 -->
                 </div>
-                
-                <div id="proyecto" class="seccion">
-                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs">
-                        <div class="slide-proyecto slide">
-                            <div class="slide-item proyecto-00 activo"></div>
-                        </div>
-                    </div>
-                    <div class="firt col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                        <h3 class="text-uppercase">Proyecto</h3>
-                        <p>
-	                        Ubicados en el Algarrobo tradicional,<br>
-							Punta Fraile se levanta para entregar una oportunidad de vida ideal,<br>
-							en medio de un espectacular entorno, con el mar como<br>
-							protagonista y áreas verdes que rodean una<br>
-							arquitectura de gran calidad.
-						</p>
-                        <p>
-	                        Un proyecto que se caracteriza por sus<br>
-							excelentes terminaciones en su interior,<br>
-							garantizando la calidad de la construcción.
-						</p>    
-						<a href="#departamentos" class="btn btn-primary ease">Ver plantas</a>
-						
-<!--
-                        <div class="btnd pastel navegar3d pull-left" onclick="Fraile.openmodal('tressesenta')">Navegar vista 360</div>
-                        <div class="btnd pastel ease navegar3d" onclick="location.href='https://www.youtube.com/embed/iouylFHKZ6Y';">Ver avances</div>
--->
-                    </div>
-                    <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="slide-proyecto slide owl-carousel owl-theme">
-                            <div class="slide-item proyecto-01"></div>
-                            <div class="slide-item proyecto-02"></div>
-                            <div class="slide-item proyecto-03"></div>
-                            <div class="slide-item proyecto-04"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="departamentos" class="seccion">
-	                <div class="row cienporcien">
-                    	<div class="col-md-11 cienporcien">
-
-							<div class="depa01 depa col-xs-12 col-sm-12 col-md-6 col-lg-6">
-			                    <div class="row cienporcien">
-			                    	<div class="col-xs-6 col-sm-5 cienporcien deptoinfo">
-				                        <div class="depa-detalle">
-				                            <div class="metros">
-				                                88 M<span>2 Útiles</span>
-				                               <!--  <div class="separador"></div> -->
-				                            </div>
-				                            <ul class="list">
-				                                <li>3 Dormitorios</li>
-				                                <li>2 Baños</li>
-				                            </ul>
-				                            <p>Valores<br>desde UF 9.195<br>hasta UF10.221</p>
-				                            <span class="separador"></span>
-				                            <p><a href="javascript:void(0);" class="imprimir">Imprimir</a></p>
-				                            <!-- <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p> -->
-				                            <!-- <div class="vermas fix" onclick="Fraile.openmodal('interior',88)"><span class="icon-plus"></span></div> -->
-				                        </div>
-			                    	</div>
-			                    	<div class="col-xs-6 col-sm-7 cienporcien">
-			                    		<img src="img/depto1.jpg" class="img-responsive">
-			                            <div class="botonera-depto">
-				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('planta',88)">Planta</a>
-				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('ficha',88)">Ficha</a>
-				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.gotocotizar()">Cotizar</a>
-			                            </div>
-			                    	</div>
-			                    </div>
-		                    </div>
-		                    <div class="depa02 depa col-xs-12 col-sm-12 col-md-6 col-lg-6">
-			                    <div class="row cienporcien">
-			                    	<div class="col-xs-6 col-sm-5 cienporcien deptoinfo">
-				                        <div class="depa-detalle">
-				                            <div class="metros">
-				                                92 M<span>2 Útiles</span>
-				                                <!-- <div class="separador"></div> -->
-				                            </div>
-				                            <ul class="list">
-				                                <li>4 Dormitorios</li>
-				                                <li>3 Baños</li>
-				                            </ul>
-				                            <p>Valores<br>desde UF 12.120<br>hasta UF 12.878</p>
-				                            <span class="separador"></span>
-				                            <p><a href="javascript:void(0);" class="imprimir">Imprimir</a></p>
-				                            <!-- <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p> -->
-				                            <!-- <div class="vermas" onclick="Fraile.openmodal('interior',92)"><span class="icon-plus"></span></div> -->
-				                        </div>
-			                    	</div>
-			                    	<div class="col-xs-6 col-sm-7 cienporcien">
-			                    		<img src="img/depto2.jpg" class="img-responsive">
-			                            <div class="botonera-depto">
-				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('planta',92)">Planta</a>
-				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('ficha',92)">Ficha</a>
-				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.gotocotizar()">Cotizar</a>
-			                            </div>
-			                    	</div>
-			                    </div>
-		                    </div>
-	                    		
-                    	</div>	                	
-	                </div>
-                    
-                </div>
-                
-                <div id="cotizador" class="seccion">
-                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs">
-                        <div class="slide-proyecto slide">
-                            <div class="slide-item proyecto-00 activo"></div>
-                        </div>
-                    </div>
-                    <div class="firt col-xs-12 col-sm-12 col-md-5 col-lg-5">
-						<h3 class="text-uppercase">Cotizar</h3>
-	                    <form id="form-cotizador" action="" onsubmit="return false;">
-	                        <div class="block-input">
-	                            <input type="text" id="cot_nombre" name="cot_nombre" placeholder="Nombre">
-	                        </div>
-	                        <div class="block-input">
-	                            <input type="text" id="cot_apellido" name="cot_apellido" placeholder="Apellido">
-	                        </div>
-	                        <div class="block-input">
-	                            <input type="text" id="cot_mail" name="cot_mail" placeholder="Mail">
-	                        </div>
-	                        <div class="block-input">
-	                           	<input type="text" id="cot_telefono" name="cot_telefono" placeholder="Teléfono">
-	                        </div>
-	                        <div class="block-input fixmobile-height" id="seldeptos">
-	                            <label>Departamento</label>
-	                            <div class="checkboxs-cotizador">
-	                                <div class="check-depa bl">
-	                                    <input type="radio" name="cot_depa" id="cot_depa" value="88">
-	                                    <span>88 mt2</span>
-	                                </div>
-	                                <div class="check-depa">
-	                                    <input type="radio" name="cot_depa" id="cot_depa" value="92">
-	                                    <span>92 mt2</span>
-	                                </div>
-	                                <div class="clearfix"></div>
-	                            </div>
-	                        </div>
-	                        <div class="block-input">
-	                            <div class="mensaje_error pastel-03"></div>
-	                            <button type="submit" class="btn pull-right btn-primary ease">enviar</button>
-	                        </div>
-	                    </form>
-                    </div>
-                    <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="slide-proyecto slide">
-                            <div class="slide-item cotizador-01 activo"></div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-				<div id="ubicacion" class="seccion">
-                    <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="slide-proyecto slide">
-                            <div class="slide-item ubicacion-01 activo"></div>
-                        </div>
-                    </div>
-                    <div class="firt col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                        <h3 class="text-uppercase text-left second-margin">Dirección</h3>
-                        <p>Paseo Peatonal, Almirante José Toribio Merino Castro Nº 3500.<br/>Algarrobo, V Región - Chile.</p>
-                        <p>(56-2) 2433 77 00</p>
-                    </div>
-                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs">
-                        <div class="slide-proyecto slide">
-                            <div class="slide-item ubicacion-00 activo"></div>
-                        </div>
-                    </div>
-                </div>                
-
-                <footer>
-	                <img src="img/linea.png">
-	                <p class="redes"><a href=""><i class="fab fa-facebook-f"></i></a> <a href=""><i class="fab fa-instagram"></i></a></p>
-	                <p class="menu2">
-		                <a href="#home">INICIO</a> • 
-		                <a href="#proyecto">PROYECTO</a> • 
-		                <a href="#proyecto">GALERIA</a> • 
-		                <a href="#departamentos">ESPACIOS</a> • 
-		                <a href="#cotizar">COTIZAR</a><br>
-<!--
-		                <a href="">CONTACTO</a> • 
-						<a href="">CONTACTO</a>
--->
-					</p>
-	                <img src="img/linea.png">
-	                <h1>Punta Fraile</h1>
-                </footer>
-                
+                             
                 <div class="redes1"><a href=""><i class="fab fa-facebook-f"></i></a> <a href=""><i class="fab fa-instagram"></i></a></div>
             
             </div><!-- content -->
             
-            <div class="tressesenta navegar3D">
-                <div class="close-modal" onclick="Fraile.closemodal('tressesenta')"><span class="icon-close"></span></div>
-                <iframe id="iframe360" src="//www.lanube360.com/punta-fraile/" border=0></iframe>
-            </div>
-
-            <div class="interior">
-                <div class="interior-detalle">
-                    <div class="firt col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="close-modal" onclick="Fraile.closemodal('interior')"><span class="icon-close"></span>
-</div>
-                        <div class="logo-puntaf hidden-xs">
-                            <img src="img/logo.png" class="img-responsive" />
-                        </div>
-                        <div class="metros">
-                            88 M<span>2</span>
-                            <div class="separador"></div>
-                        </div>
-                        <div class="box-detalle">
-                            <div class="item-detalle">3 dormitorios</div>
-                            <div class="item-detalle">2 baños</div>
-                        </div>
-                        <div class="descripcion">
-                            <h4>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</h4>
-                            <p>Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                        </div>
-                        <div class="button-group">
-                            <div class="btnd pastel ease" onclick="Fraile.openmodal('planta')">planta</div>
-                            <div class="btnd pastel-01 ease" onclick="Fraile.verFicha()">ficha</div>
-                            <div class="btnd azul-01 ease" onclick="Fraile.gotocotizar()">cotizar</div>
-                        </div>
-                        <div class="otras-opciones hide">
-                            <span>ver otras opciones</span>
-                            <a>122<span class="separador"></span></a>
-                        </div>
-                    </div>
-                    <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                         <div class="slide-interior slide">
-                            <div class="slide-item interior-01 activo"></div>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-            <div class="planta">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="close-modal" onclick="Fraile.closemodal('planta')"><span class="icon-close"></span></div>
-                    <h3 class="text-center">PLANTA</h3>
-                    <img src="img/slide-proyecto/planta_88.jpg" data-proyecto="88" class="hide pl" />
-                    <img src="img/slide-proyecto/planta_92.jpg" data-proyecto="92" class="hide pl" />
-                </div>
-            </div>
-            <div class="ficha">
-                <div class="firt col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="info-depa">
-                        <div class="metros">
-                            88 M<span>2</span>
-                            <div class="separador"></div>
-                        </div>
-                        <div class="box-detalle">
-                            <div class="item-detalle">3 dormitorios</div>
-                            <div class="item-detalle">2 baños</div>
-                        </div>
-                        <div class="button-group hidden-xs hidden-sm">
-                            <a class="btnd pastel ease" onclick="Fraile.closemodal('ficha'); Fraile.openmodal('planta');">planta</a>
-                            <a class="btnd pastel-01 ease descargarficha" target="_blank">descargar ficha</a>
-                        </div>
-                    </div>                       
-                </div>
-                <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h3 class="text-uppercase">Especificaciones técnicas generales</h3>
-                    <div class="close-modal" onclick="Fraile.closemodal('ficha')"><span class="icon-close"></span></div>
-                    <div class="carac">
-                        <div class="item">
-                            <div class="icono ic-01"></div>
-                            <p class="hidden-xs hidden-sm">vista al mar</p>
-                        </div>
-                        <div class="item">
-                            <div class="icono ic-02"></div>
-                            <p class="hidden-xs hidden-sm">piscina</p>
-                        </div>
-                        <div class="item">
-                            <div class="icono ic-03"></div>
-                            <p class="hidden-xs hidden-sm">paisajismo</p>
-                        </div>
-                        <div class="item">
-                            <div class="icono ic-04"></div>
-                            <p class="hidden-xs hidden-sm">estacionamiento privado</p>
-                        </div>
-                        <div class="item">
-                            <div class="icono ic-05"></div>
-                            <p class="hidden-xs hidden-sm">multicanchas</p>
-                        </div>
-                        <div class="item">
-                            <div class="icono ic-07"></div>
-                            <p class="hidden-xs hidden-sm">paseo peatonal</p>
-                        </div>
-                        <div class="item">
-                            <div class="icono ic-08"></div>
-                            <p class="hidden-xs hidden-sm">cernanía Clubes de yates</p>
-                        </div>
-                    </div>
-                    <div class="carac hidden-xs hidden-sm">
-                        <ul>
-                            <li>Altura piso a cielo > 2,40 mts.</li>
-                            <li>Estar-comedor-pasillo-hall acceso, Piso Flotante de PVC.</li>
-                            <li>Cocinas y baños, pavimento porcelanato.</li>
-                            <!--<li>Muros cerámica formato rectangular blanco.</li>-->
-                            <li>Dormitorios Piso Flotante de PVC.</li>
-                            <li>Ventanas de PVC foliado madera.</li>
-                            <li>Terrazas con barandas de vidrio.</li>
-                            <li>Muebles de cocina con cubierta cuarzo.</li>
-                            <li>Calefacción a gas con caldera individual con radiadores sectorizados.</li>
-                            <li>Alarmas por departamento.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- end_ficha-->
         </div>
     </div>
     <script src="js/external.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
