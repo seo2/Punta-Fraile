@@ -153,7 +153,7 @@
                     <a href="#proyecto" 		class="menu-item" onclick="Fraile.toogleMenu()">Proyecto</a>
                     <a href="#departamentos" 	class="menu-item" onclick="Fraile.toogleMenu()">Departamentos</a>
                     <a href="#cotizador" 		class="menu-item" onclick="Fraile.toogleMenu()">Cotizador</a>
-                    <a href="#ubicacion" 		class="menu-item" onclick="Fraile.toogleMenu()">Ubicacion</a>
+                    <a href="#ubicacion" 		class="menu-item" onclick="Fraile.toogleMenu()">Ubicación</a>
 <!--                     <a href="#contacto" 		class="menu-item" onclick="Fraile.toogleMenu()">Contacto</a> -->
                 </div>  
             </div>
@@ -167,9 +167,9 @@
                     <div class="slide-home slide">
                         <div class="slide-item home-01 activo">
 							<video controls="controls"  autoplay="autoplay" poster="videos/loop.jpg"  loop="loop" class="hidden-xs" >
-								<source src="videos/loop.m4v" type="video/mp4" />
-								<source src="videos/loop.webm" type="video/webm" />
-								<source src="videos/loop.mp4" />
+								<source src="videos/ezgif.com-gif-to-mp4.m4v" type="video/mp4" />
+								<source src="videos/ezgif.com-gif-to-mp4.webm" type="video/webm" />
+								<source src="videos/ezgif.com-gif-to-mp4.mp4" />
 							</video>
         
                         </div>
@@ -247,12 +247,16 @@
 				                        </div>
 			                    	</div>
 			                    	<div class="col-xs-6 col-sm-7 cienporcien">
-			                    		<img src="img/depto1.jpg" class="img-responsive">
-			                            <div class="botonera-depto">
-				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('planta',88)">Planta</a>
-				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('ficha',88)">Ficha</a>
-				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.gotocotizar()">Cotizar</a>
-			                            </div>
+				                    	
+				                        <div class="slide-proyecto slide">
+				                            <div class="slide-item depto-01 activo"></div>
+				                            <div class="botonera-depto">
+					                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('planta',88)">Planta</a>
+					                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('ficha',88)">Ficha</a>
+					                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.gotocotizar()">Cotizar</a>
+				                            </div>
+				                        </div>
+			                    		<!-- <img src="img/depto1.jpg" class="img-responsive"> -->
 			                    	</div>
 			                    </div>
 		                    </div>
@@ -276,12 +280,14 @@
 				                        </div>
 			                    	</div>
 			                    	<div class="col-xs-6 col-sm-7 cienporcien">
-			                    		<img src="img/depto2.jpg" class="img-responsive">
-			                            <div class="botonera-depto">
+				                        <div class="slide-proyecto slide">
+				                            <div class="slide-item depto-02 activo"></div>
+				                            <div class="botonera-depto">
 				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('planta',92)">Planta</a>
 				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('ficha',92)">Ficha</a>
 				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.gotocotizar()">Cotizar</a>
-			                            </div>
+				                            </div>
+				                        </div>
 			                    	</div>
 			                    </div>
 		                    </div>
@@ -343,12 +349,19 @@
 				<div id="ubicacion" class="seccion">
                     <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="slide-proyecto slide">
-                            <div class="slide-item ubicacion-01 activo"></div>
+                            <div class="slide-item ubicacion-01 activo">
+	                           <!--
+ <div class='embed-container'>
+		                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6664.530261416146!2d-71.68684396740717!3d-33.36414358079863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662116ed4330e3f%3A0x9ce311e9dff6ff09!2sJos%C3%A9+Toribio+Merino%2C+Algarrobo%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1518632404258" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
+	                            </div>
+-->
+								<div style="height:100%;" id="map-canvas"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="firt col-xs-12 col-sm-12 col-md-5 col-lg-5">
                         <h3 class="text-uppercase text-left second-margin">Dirección</h3>
-                        <p>Paseo Peatonal, Almirante José Toribio Merino Castro Nº 3500.<br/>Algarrobo, V Región - Chile.</p>
+                        <p>Paseo Peatonal, Almirante José Toribio Merino Castro.<br/>Algarrobo, V Región - Chile.</p>
                         <p>(56-2) 2433 77 00</p>
                     </div>
                     <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs">
@@ -360,11 +373,11 @@
 
                 <footer>
 	                <img src="img/linea.png">
-	                <p class="redes"><a href=""><i class="fab fa-facebook-f"></i></a> <a href=""><i class="fab fa-instagram"></i></a></p>
+	                <p class="redes"><!-- <a href=""><i class="fab fa-facebook-f"></i></a>  --><a href=""><i class="fab fa-instagram"></i></a></p>
 	                <p class="menu2">
 		                <a href="#home">INICIO</a> • 
 		                <a href="#proyecto">PROYECTO</a> • 
-		                <a href="#proyecto">GALERIA</a> • 
+		                <a href="#proyecto">GALERÍA</a> • 
 		                <a href="#departamentos">ESPACIOS</a> • 
 		                <a href="#cotizar">COTIZAR</a><br>
 <!--
@@ -376,7 +389,7 @@
 	                <h1>Punta Fraile</h1>
                 </footer>
                 
-                <div class="redes1"><a href=""><i class="fab fa-facebook-f"></i></a> <a href=""><i class="fab fa-instagram"></i></a></div>
+                <div class="redes1"><!-- <a href=""><i class="fab fa-facebook-f"></i></a>  --><a href=""><i class="fab fa-instagram"></i></a></div>
             
             </div><!-- content -->
             
@@ -500,6 +513,7 @@
     </div>
     <script src="js/external.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8fv72G8_SCLr7BJKx-GekqoyL4vyJFlA" async defer></script>
     <script src="js/main.js"></script>
 </body>
 </html>

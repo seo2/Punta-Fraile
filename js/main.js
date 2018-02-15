@@ -197,6 +197,8 @@ var Fraile = {
 	},
 	closemodal: function(cual,objeto){
 		TweenMax.to($("."+cual),.3,{opacity: 0, scale: .7, zIndex: -1, ease: Quad.easeOut });
+		
+		$(".planta img").addClass('hide');
 
 	},
 	cargaInfo: function(objeto){
@@ -447,5 +449,227 @@ $('.owl-carousel').owlCarousel({
     items:1,
 	dots:true,
 	autoplay: true,
-	autoplayTimeout: 3000
+	autoplayTimeout: 3000,
+	smartSpeed: 1000
 })
+
+//// GOOGLE MAP API
+
+var map;
+function initialize()
+{
+	// Create an array of styles.
+  var styles = [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dadada"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#c9c9c9"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  }
+];
+ 
+
+  var myLatLng1 = {lat: -33.3641436, lng: -71.6824666};	
+  var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
+
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: myLatLng1,//Setting Initial Position
+    zoom: 16,
+    scrollwheel: false,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
+  });
+  
+  //Associate the styled map with the MapTypeId and set it to display.
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');  
+  
+  
+  var marker = new google.maps.Marker({
+    position: myLatLng1,
+    map: map,
+    title: 'Alcazar',
+    icon: "img/location-pointer.png?ver=2"
+  });
+  
+  
+  	marker.setMap(map);
+	url = "https://www.google.cl/maps/place/Jos%C3%A9+Toribio+Merino,+Algarrobo,+Regi%C3%B3n+de+Valpara%C3%ADso/@-33.3641436,-71.6846553,17z/data=!3m1!4b1!4m5!3m4!1s0x9662116ed4330e3f:0x9ce311e9dff6ff09!8m2!3d-33.3641436!4d-71.6824666?hl=es";
+	marker.addListener('click', function() {
+		window.open(url, '_blank');
+	});	
+  
+  
+}
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+function newLocation(newLat,newLng)
+{
+	 map.setCenter({
+		lat : newLat,
+		lng : newLng
+	});
+}
+
+
+
+
+
+
+

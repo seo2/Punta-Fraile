@@ -1,5 +1,5 @@
 body{font-family:'brandon-grotesque';}
-.slide-item.home-01{background-image:url(../img/slide-home/01.jpg)}
+.slide-item.home-01{background-image:url(../videos/ezgif.com-gif-to-mp4.jpg)}
 .slide-item.home-02{background-image:url(../img/slide-home/02.jpg)}
 .slide-item.home-03{background-image:url(../img/slide-home/03.jpg)}
 .slide-item.proyecto-00{background-image:url(../img/bg-proyecto-01.jpg)}
@@ -14,8 +14,8 @@ body{font-family:'brandon-grotesque';}
 .zero,.firt,.second{height:100%;padding:0;margin:0}
 #proyecto{padding: 70px 0;}
 #proyecto .firt{padding:5% 20px 0 55px;color:#fff}
-#proyecto .firt h3{color: #adadb2;  font-weight: 700; letter-spacing: 50px;}
-#proyecto h3{margin-top:25%;margin-bottom:7%; margin-left: -20px;}
+#proyecto .firt h3{color: #adadb2;  font-weight: 700; letter-spacing: 40px;}
+#proyecto h3{margin-top:0;margin-bottom:7%; margin-left: -20px;}
 #proyecto p{text-align:left;padding-right:7%; color: #5b5b5e; font-weight: 400px; line-height: 200px; letter-spacing: 2px; line-height: 200%; margin-bottom: 30px; }
 
 #departamentos{padding: 70px 0; border-left: #d4dce4 solid 30px;}
@@ -31,7 +31,7 @@ body{font-family:'brandon-grotesque';}
 #departamentos .depa01{}
 #departamentos .depa02{}
 
-.botonera-depto{position: absolute; bottom: 130px; left: 30px; width: 100%; }
+.botonera-depto{position: absolute; bottom: 10%; left: 30px; width: 100%; }
 .botonera-depto .btn-secondary { border: 1px solid rgba(255,255,255,0.5); background: rgba(255,255,255,0.5); color: #000; width: 30%; font-weight: 100; display: inline-block; padding: 10px 0; margin: 0 2% 0 0; font-size: 12px;}
 .botonera-depto .btn-secondary:hover{border: 1px solid #000;} 
 
@@ -42,10 +42,10 @@ body{font-family:'brandon-grotesque';}
 
 #cotizador{padding: 70px 0;}
 #cotizador h3{color: #adadb2; letter-spacing: 20px;margin-left: 10%;}
-#form-cotizador{display:block;position:relative;margin:30px auto 0; margin-left: 10%; margin-right: 10%;}
+#form-cotizador{display:block;position:relative;margin:20px auto 0; margin-left: 10%; margin-right: 10%;}
 .block-input{margin-bottom: 20px; clear: both;}
 .block-input label{ text-transform:uppercase; font-size:15px; padding:10px 0 0 30px; font-weight: normal;color: #656565; display: block;  font-weight: 100; }
-.block-input input[type="text"]{background-color:transparent; color:#656565; border:none; border-bottom:1px solid #656565; font-size:15px; text-transform:uppercase; width: 100%; padding: 5px 25px 30px; display: block;}
+.block-input input[type="text"]{background-color:transparent; color:#656565; border:none; border-bottom:1px solid #656565; font-size:15px; text-transform:uppercase; width: 100%; padding: 5px 25px 20px; display: block;}
 .block-input textarea{float:right;width:60%;background-color:transparent;color:#fff;border:3px solid #fff;height:40px;font-size:15px;text-transform:uppercase;padding:5px}
 .block-input .checkboxs-cotizador{}
 .block-input .checkboxs-cotizador .check-depa{width:30%;float:left;font-size:14px;text-transform:uppercase;height:100%;padding-top:10px; margin-left: 30px; }
@@ -154,6 +154,9 @@ video{width: 100%;}
 #img360{position: absolute;border-top: #d4dce4 solid 1px; bottom: 20%; right: 10%;}
 #img360 a{letter-spacing: 4px; font-size: 12px; text-transform: uppercase; color: #5b5b5e; position: relative; right: -100%;}
 
+.slide-item.depto-01{background-image:url(../img/depto1.jpg)}
+.slide-item.depto-02{background-image:url(../img/depto2.jpg)}
+
 footer{background: #d4dce4; color: #fff; min-height: 200px; text-align: center;clear: both; border-top: 40px solid #fff; padding: 40px 0 30px;}
 footer img{margin: 20px 0;}
 footer p{margin: 20px 0;}
@@ -197,3 +200,16 @@ a.imprimir{text-transform: uppercase; letter-spacing: 5px; color: #58585b;}
 .owl-carousel, .owl-carousel .owl-stage, .owl-carousel .owl-stage-outer,
 .owl-carousel.owl-drag .owl-item{height: 100%;}
 .owl-carousel.owl-drag .owl-item .slide-item{opacity: 1;}
+
+
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 100%; overflow: hidden; max-width: 100%; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.map {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
