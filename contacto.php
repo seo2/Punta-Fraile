@@ -3,20 +3,20 @@ try {
 	if(isset($_POST)){
 		if(is_array($_POST)){
 			if($_POST['tipo'] == 'cotizar'){
-				$nombre = $_POST['cot_nombre'];
-				$apellido = $_POST['cot_apellido'];
-				$mail = $_POST['cot_mail'];
-				$telefono = $_POST['cot_telefono'];
-				$depa = $_POST['cot_depa'];
+				$nombre 	= $_POST['cot_nombre'];
+				$rut 		= $_POST['cot_rut'];
+				$mail 		= $_POST['cot_mail'];
+				$telefono 	= $_POST['cot_telefono'];
+				$depa 		= $_POST['cot_depa'];
 				
 				$body = '<table>
 					<tr>
-						<td><b>Nombre: </b></td>
+						<td><b>Nombre y Apellido: </b></td>
 						<td>'.$nombre.'</td>
 					</tr>
 					<tr>
-						<td><b>Apellido: </b></td>
-						<td>'.$apellido.'</td>
+						<td><b>RUT: </b></td>
+						<td>'.$rut.'</td>
 					</tr>
 					<tr>
 						<td><b>Mail: </b></td>
@@ -36,10 +36,9 @@ try {
 				$headers = "MIME-Version: 1.0\r\n"; 
 				$headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 
-				// mail("jaime.quinones.t@gmail.com","Cotización",$body,$headers);
-				
-				mail("pablopizarro@queylen.cl","Cotización",$body,$headers);
-				// mail("marco@agenciafauna.com","Cotización",$body,$headers);
+				$to = "pablopizarro@queylen.cl";
+				//$to = "seodos@gmail.com";
+				mail($to ,"Cotización Alcazar by Punta Fraile",$body,$headers);
 			}
 			
 			if( $_POST['tipo'] == 'contacto'){

@@ -34,7 +34,7 @@ function addHammer(el) {
 //addHammer(document.querySelector("#slide-detalle"));
 //var urlSite = 'http://iactivsense.do/';
 var urlSite = window.location.origin+window.location.pathname;
-
+console.log(urlSite);
 /* cargar todos los slide por este medio */
 function preload(donde,imageArray, index) {
 	
@@ -294,7 +294,7 @@ $("#form-cotizador").validate({
 		cot_nombre: {
 			required: true
 		},
-		cot_apellido: {
+		cot_rut: {
 			required: true
 		},
 		cot_mail: {
@@ -310,10 +310,10 @@ $("#form-cotizador").validate({
 	},
   	messages: {
   		cot_nombre: {
-  			required: 'Ingresa tu nombre'
+  			required: 'Ingresa tu nombre y apellido'
   		},
-		cot_apellido: {
-			required: 'Ingresa tu apellido'
+		cot_rut: {
+			required: 'Ingresa tu RUT'
 		},
 		cot_mail: {
 			required: 'Ingresa tu email',
@@ -346,11 +346,11 @@ $("#form-cotizador").validate({
   			url: urlSite+'contacto.php',
   			data: {
 				tipo: 'cotizar',
-				cot_nombre: $('input[name="cot_nombre"]').val(),
-				cot_apellido: $('input[name="cot_apellido"]').val(),
-				cot_mail: $('input[name="cot_mail"]').val(),
-				cot_telefono: $('input[name="cot_telefono"]').val(),
-				cot_depa: $('input[name="cot_depa"]:checked').val()
+				cot_nombre: 	$('input[name="cot_nombre"]').val(),
+				cot_rut: 		$('input[name="cot_rut"]').val(),
+				cot_mail: 		$('input[name="cot_mail"]').val(),
+				cot_telefono: 	$('input[name="cot_telefono"]').val(),
+				cot_depa: 		$('input[name="cot_depa"]:checked').val()
   			},
   			dataType: 'JSON',
   			success: function(r){
@@ -667,6 +667,12 @@ function newLocation(newLat,newLng)
 	});
 }
 
+$('.btn-360').on('click', function(){
+	pid = $(this).data('pid');
+	$('.btn-360').removeClass('activo');
+	$(this).addClass('activo');
+	 $('#el360 iframe').attr('src','https://h5.veer.tv/photo-player?pid='+pid);
+});
 
 
 

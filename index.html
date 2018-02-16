@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/czq2svy.css">
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8fv72G8_SCLr7BJKx-GekqoyL4vyJFlA" async defer></script>
         <style>
             /*!
              * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -56,7 +57,7 @@
             .azul-01{background-color:rgba(23,131,187,1)}
             .verde-01{background-color:#6dc4c1}
             .verde-02{background-color:#439cc4}
-            .pastel{background-color:rgba(214,197,137,1)}
+            .pastel{background-color:#d4dce4;}
             .pastel-01{background-color:rgba(243,224,157,1)}
             .pastel-02{background-color:rgba(246,230,169,1)}
             .pastel-03{background-color:rgba(247,222,139,1)}
@@ -78,11 +79,11 @@
             .btn{padding:10px 50px;color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:16px;border-radius:0;position:relative;display:block;font-family:'brandon-grotesque'}
             .button-group{width:120%;height:41px;position:relative;z-index:1;margin:30px 0}
             .btnd{text-align:center;width:33.33%;float:left;padding:10px;font-size:1em;color:#fff;text-transform:uppercase;letter-spacing:2px;cursor:pointer;font-family:'brandon-grotesque'}
-            .btnd.pastel{border:1px solid rgba(214,197,137,1)}
+            .btnd.pastel{border:1px solid #d4dce4; color: #5b5b5e;}
             .btnd.pastel-01{border:1px solid rgba(243,224,157,1)}
             .btnd.azul-01{border:1px solid rgba(23,131,187,1)}
             .btnd:hover{text-decoration:none}
-            .btnd.pastel:hover{background-color:#fff;color:rgba(214,197,137,1)}
+            .btnd.pastel:hover{background-color:#fff;color:#5b5b5e}
             .btnd.pastel-01:hover{background-color:#fff;color:rgba(243,224,157,1)}
             .btnd.azul-01:hover{background-color:#fff;color:rgba(23,131,187,1)}
             .btn.verde-02{border:1px solid #439cc4}
@@ -146,7 +147,6 @@
             <div class="menu" data-toogle="close">
                 <div class="hambur" onclick="Fraile.toogleMenu()">
                     <span class="icon-hambur"></span>
-<!--                     <img src="img/logo.png" class="logo-header-mobile visible-xs" /> -->
                     <span class="icon-close hide"></span>
                 </div>
                 <div class="list-menu">
@@ -154,7 +154,6 @@
                     <a href="#departamentos" 	class="menu-item" onclick="Fraile.toogleMenu()">Departamentos</a>
                     <a href="#cotizador" 		class="menu-item" onclick="Fraile.toogleMenu()">Cotizador</a>
                     <a href="#ubicacion" 		class="menu-item" onclick="Fraile.toogleMenu()">Ubicación</a>
-<!--                     <a href="#contacto" 		class="menu-item" onclick="Fraile.toogleMenu()">Contacto</a> -->
                 </div>  
             </div>
             
@@ -174,20 +173,12 @@
         
                         </div>
                     </div>
-<!--                     <div class="bg-fijo"></div> -->
                     <div class="entrada-grande text-uppercase">una<br>oportunidad<br/>de vida<br>real</div>
-<!--                     <div class="btnd azul-01 ease gotocotizar" onclick="Fraile.gotocotizar()">Cotizar Ahora</div> -->
-<!--                     <a href="#proyecto" class="flecha-abajo"><img src="img/arrow.png" /></a> -->
                     <div class="ultimas-unidades hide"></div>
-<!--
-                    <div id="img360">
-	                    <a href="javascript:void(0)" onclick="Fraile.openmodal('tressesenta')">Imagen 360º</a>
-                    </div>
--->
                 </div>
                 
                 <div id="proyecto" class="seccion">
-                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs">
+                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs hidden-sm">
                         <div class="slide-proyecto slide">
                             <div class="slide-item proyecto-00 activo"></div>
                         </div>
@@ -195,11 +186,10 @@
                     <div class="firt col-xs-12 col-sm-12 col-md-5 col-lg-5">
                         <h3 class="text-uppercase">Proyecto</h3>
                         <p>
-	                        Ubicados en el Algarrobo tradicional,<br>
-							Punta Fraile se levanta para entregar una oportunidad de vida ideal,<br>
-							en medio de un espectacular entorno, con el mar como<br>
-							protagonista y áreas verdes que rodean una<br>
-							arquitectura de gran calidad.
+	En medio de un espectacular entorno, con el mar de Algarrobo como
+protagonista y áreas verdes que rodean una
+arquitectura de gran calidad. Punta Fraile se levanta para entregar una oportunidad de vida ideal.
+
 						</p>
                         <p>
 	                        Un proyecto que se caracteriza por sus<br>
@@ -207,11 +197,6 @@
 							garantizando la calidad de la construcción.
 						</p>    
 						<a href="#departamentos" class="btn btn-primary ease">Ver plantas</a>
-						
-<!--
-                        <div class="btnd pastel navegar3d pull-left" onclick="Fraile.openmodal('tressesenta')">Navegar vista 360</div>
-                        <div class="btnd pastel ease navegar3d" onclick="location.href='https://www.youtube.com/embed/iouylFHKZ6Y';">Ver avances</div>
--->
                     </div>
                     <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="slide-proyecto slide owl-carousel owl-theme">
@@ -233,30 +218,29 @@
 				                        <div class="depa-detalle">
 				                            <div class="metros">
 				                                88 M<span>2 Útiles</span>
-				                               <!--  <div class="separador"></div> -->
 				                            </div>
 				                            <ul class="list">
 				                                <li>3 Dormitorios</li>
 				                                <li>2 Baños</li>
 				                            </ul>
-				                            <p>Valores<br>desde UF 9.195<br>hasta UF10.221</p>
+				                            <p>Valores<br>desde UF 5.885<br>(sin estacionamiento)<br>hasta UF 7.662<br>(sin estacionamiento)</p>
 				                            <span class="separador"></span>
-				                            <p><a href="javascript:void(0);" class="imprimir">Imprimir</a></p>
-				                            <!-- <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p> -->
-				                            <!-- <div class="vermas fix" onclick="Fraile.openmodal('interior',88)"><span class="icon-plus"></span></div> -->
+				                            <p><a href="javascript:void(0);" class="imprimir hidden-xs">Imprimir</a></p>
+
 				                        </div>
 			                    	</div>
 			                    	<div class="col-xs-6 col-sm-7 cienporcien">
 				                    	
 				                        <div class="slide-proyecto slide">
-				                            <div class="slide-item depto-01 activo"></div>
-				                            <div class="botonera-depto">
-					                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('planta',88)">Planta</a>
-					                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('ficha',88)">Ficha</a>
-					                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.gotocotizar()">Cotizar</a>
+				                            <div class="slide-item depto-01 activo ease" onclick="Fraile.openmodal('el360',92)">
+					                            <img src="img/360.svg" class="ico-360 ease">
 				                            </div>
 				                        </div>
-			                    		<!-- <img src="img/depto1.jpg" class="img-responsive"> -->
+			                            <div class="botonera-depto">
+				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('planta',88)">Planta</a>
+				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('ficha',88)">Ficha</a>
+				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.gotocotizar()">Cotizar</a>
+			                            </div>
 			                    	</div>
 			                    </div>
 		                    </div>
@@ -266,28 +250,28 @@
 				                        <div class="depa-detalle">
 				                            <div class="metros">
 				                                92 M<span>2 Útiles</span>
-				                                <!-- <div class="separador"></div> -->
 				                            </div>
 				                            <ul class="list">
-				                                <li>4 Dormitorios</li>
-				                                <li>3 Baños</li>
+				                                <li>3 Dormitorios</li>
+				                                <li>2 Baños</li>
 				                            </ul>
-				                            <p>Valores<br>desde UF 12.120<br>hasta UF 12.878</p>
+				                            <p>Valores<br>desde UF 5.885<br>(sin estacionamiento)<br>hasta UF 7.662<br>(sin estacionamiento)</p>
 				                            <span class="separador"></span>
-				                            <p><a href="javascript:void(0);" class="imprimir">Imprimir</a></p>
-				                            <!-- <p class="hidden-xs">Los precios están sujetos a cambio y son sólo referenciales.</p> -->
-				                            <!-- <div class="vermas" onclick="Fraile.openmodal('interior',92)"><span class="icon-plus"></span></div> -->
+				                            <p><a href="javascript:void(0);" class="imprimir hidden-xs">Imprimir</a></p>
+
 				                        </div>
 			                    	</div>
 			                    	<div class="col-xs-6 col-sm-7 cienporcien">
 				                        <div class="slide-proyecto slide">
-				                            <div class="slide-item depto-02 activo"></div>
-				                            <div class="botonera-depto">
+				                            <div class="slide-item depto-02 activo ease" onclick="Fraile.openmodal('el360',92)">
+					                            <img src="img/360.svg" class="ico-360 ease">
+					                        </div>
+				                        </div>
+			                            <div class="botonera-depto">
 				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('planta',92)">Planta</a>
 				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.openmodal('ficha',92)">Ficha</a>
 				                            <a href="javascript:void(0);" class="btn btn-secondary ease" onclick="Fraile.gotocotizar()">Cotizar</a>
-				                            </div>
-				                        </div>
+			                            </div>
 			                    	</div>
 			                    </div>
 		                    </div>
@@ -298,7 +282,7 @@
                 </div>
                 
                 <div id="cotizador" class="seccion">
-                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs">
+                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs hidden-sm">
                         <div class="slide-proyecto slide">
                             <div class="slide-item proyecto-00 activo"></div>
                         </div>
@@ -307,10 +291,10 @@
 						<h3 class="text-uppercase">Cotizar</h3>
 	                    <form id="form-cotizador" action="" onsubmit="return false;">
 	                        <div class="block-input">
-	                            <input type="text" id="cot_nombre" name="cot_nombre" placeholder="Nombre">
+	                            <input type="text" id="cot_nombre" name="cot_nombre" placeholder="Nombre y Apellido">
 	                        </div>
 	                        <div class="block-input">
-	                            <input type="text" id="cot_apellido" name="cot_apellido" placeholder="Apellido">
+	                            <input type="text" id="cot_rut" name="cot_rut" placeholder="RUT">
 	                        </div>
 	                        <div class="block-input">
 	                            <input type="text" id="cot_mail" name="cot_mail" placeholder="Mail">
@@ -350,11 +334,6 @@
                     <div class="second col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="slide-proyecto slide">
                             <div class="slide-item ubicacion-01 activo">
-	                           <!--
- <div class='embed-container'>
-		                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6664.530261416146!2d-71.68684396740717!3d-33.36414358079863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662116ed4330e3f%3A0x9ce311e9dff6ff09!2sJos%C3%A9+Toribio+Merino%2C+Algarrobo%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1518632404258" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
-	                            </div>
--->
 								<div style="height:100%;" id="map-canvas"></div>
                             </div>
                         </div>
@@ -364,7 +343,7 @@
                         <p>Paseo Peatonal, Almirante José Toribio Merino Castro.<br/>Algarrobo, V Región - Chile.</p>
                         <p>(56-2) 2433 77 00</p>
                     </div>
-                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs">
+                    <div class="zero col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs hidden-sm">
                         <div class="slide-proyecto slide">
                             <div class="slide-item ubicacion-00 activo"></div>
                         </div>
@@ -373,30 +352,21 @@
 
                 <footer>
 	                <img src="img/linea.png">
-	                <p class="redes"><!-- <a href=""><i class="fab fa-facebook-f"></i></a>  --><a href=""><i class="fab fa-instagram"></i></a></p>
+	                <p class="redes"><a href=""><i class="fab fa-instagram"></i></a></p>
 	                <p class="menu2">
 		                <a href="#home">INICIO</a> • 
 		                <a href="#proyecto">PROYECTO</a> • 
 		                <a href="#proyecto">GALERÍA</a> • 
 		                <a href="#departamentos">ESPACIOS</a> • 
 		                <a href="#cotizar">COTIZAR</a><br>
-<!--
-		                <a href="">CONTACTO</a> • 
-						<a href="">CONTACTO</a>
--->
 					</p>
 	                <img src="img/linea.png">
 	                <h1>Punta Fraile</h1>
                 </footer>
                 
-                <div class="redes1"><!-- <a href=""><i class="fab fa-facebook-f"></i></a>  --><a href=""><i class="fab fa-instagram"></i></a></div>
+                <div class="redes1"><a href=""><i class="fab fa-instagram"></i></a></div>
             
             </div><!-- content -->
-            
-            <div class="tressesenta navegar3D">
-                <div class="close-modal" onclick="Fraile.closemodal('tressesenta')"><span class="icon-close"></span></div>
-                <iframe id="iframe360" src="//www.lanube360.com/punta-fraile/" border=0></iframe>
-            </div>
 
             <div class="interior">
                 <div class="interior-detalle">
@@ -508,12 +478,48 @@
                         </ul>
                     </div>
                 </div>
-            </div><!-- end_ficha-->
+            </div>
+            <div class="el360">
+	            <div id="el360">
+	                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1" id="box360">
+		                <div class="close-modal" onclick="Fraile.closemodal('el360')"><span class="icon-close"></span></div>
+	                    <div class='embed-container'>
+		                    <iframe src="https://h5.veer.tv/photo-player?pid=44300" frameborder="0" allowfullscreen="true" width="480" height="350"></iframe>
+	                    </div>
+	                    <div class="row">
+	                    	<div class="col-xs-3 text-center">
+	                    		<a href="javascript:void(0);" class="btn-360 activo" data-pid="44300">
+		                    		<img src="img/living.png" class="img-responsive">
+		                    		<p>Living</p>
+	                    		</a>
+	                    	</div>
+	                    	<div class="col-xs-3 text-center">
+	                    		<a href="javascript:void(0);" class="btn-360" data-pid="44297">
+		                    		<img src="img/cocina.png" class="img-responsive">
+		                    		<p>Cocina</p>
+	                    		</a>
+	                    	</div>
+	                    	<div class="col-xs-3 text-center">
+	                    		<a href="javascript:void(0);" class="btn-360" data-pid="44298">
+		                    		<img src="img/dorm1.png" class="img-responsive">
+		                    		<p>Dorm. 1</p>
+	                    		</a>
+	                    	</div>
+	                    	<div class="col-xs-3 text-center">
+	                    		<a href="javascript:void(0);" class="btn-360"  data-pid="44299">
+		                    		<img src="img/dorm2.png" class="img-responsive">
+		                    		<p>Dorm. 2</p>
+	                    		</a>
+	                    	</div>
+	                    </div>
+	                    
+	                </div>
+	            </div>
+            </div>
         </div>
     </div>
     <script src="js/external.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8fv72G8_SCLr7BJKx-GekqoyL4vyJFlA" async defer></script>
     <script src="js/main.js"></script>
 </body>
 </html>

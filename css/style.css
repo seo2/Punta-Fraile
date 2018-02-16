@@ -54,7 +54,7 @@ body{font-family:'brandon-grotesque';}
 .slide-item.cotizador-01{background-image:url(../img/plantas.jpg); background-size: contain; background-repeat: no-repeat; background-position: center center;}
 
 .slide-item.ubicacion-00{background-image:url(../img/bg-direccion-01.jpg)}
-.slide-item.ubicacion-01{background-image:url(../img/mapa.png)}
+.slide-item.ubicacion-01{background: #C9C9C9;}
 
 #ubicacion{padding: 70px 0; border-left: #d4dce4 solid 30px;}
 #ubicacion .firt{padding:5% 20px 0 55px;color:#fff}
@@ -153,9 +153,12 @@ video{width: 100%;}
 
 #img360{position: absolute;border-top: #d4dce4 solid 1px; bottom: 20%; right: 10%;}
 #img360 a{letter-spacing: 4px; font-size: 12px; text-transform: uppercase; color: #5b5b5e; position: relative; right: -100%;}
-
-.slide-item.depto-01{background-image:url(../img/depto1.jpg)}
-.slide-item.depto-02{background-image:url(../img/depto2.jpg)}
+#departamentos .slide-proyecto{overflow: hidden;}
+.slide-item.depto-01{background-image:url(../img/depto1.jpg); background-size: cover;transform: scale(1);}
+.slide-item.depto-02{background-image:url(../img/depto2.jpg); background-size: cover;transform: scale(1);}
+.slide-item.depto-01:hover,.slide-item.depto-02:hover{transform: scale(1.1); cursor: pointer;}
+.ico-360{position: absolute; width: 40px; right: -50px; top: 60%}
+.slide-item.depto-01:hover .ico-360,.slide-item.depto-02:hover .ico-360{right: 50px;}
 
 footer{background: #d4dce4; color: #fff; min-height: 200px; text-align: center;clear: both; border-top: 40px solid #fff; padding: 40px 0 30px;}
 footer img{margin: 20px 0;}
@@ -175,14 +178,6 @@ footer h1{ text-transform: uppercase; letter-spacing: 15px; font-weight: 400; fo
 .cienporcien{height: 100%;}
 .nopad{padding: 0;}
 
-/*
-.homepad1{padding: 5% 0 5% 15%;}
-.homepad2{padding: 5% 15% 5% 0; background: #d4dce4; }
-.homepad1 .slide-item.home-01{background-image:url(../img/web_ilustracion_izquierda.jpg)}
-.homepad2 .slide-item.home-01{background-image:url(../img/web_ilustracion_derecha.jpg)}
-#txt1{position: absolute; top: 13%; left: 8%; width: 57%;}
-#txt2{position: absolute; bottom: 13%; right: 12%; width: 50%;}
-*/
 .homepad1{padding: 7% 0 7% 18%;}
 .homepad2{padding: 7% 18% 7% 0; background: #d4dce4; }
 .homepad1 .slide-item.home-01{background-image:url(../img/web_ilustracion_izquierda.jpg);     background-position: center;}
@@ -213,3 +208,14 @@ a.imprimir{text-transform: uppercase; letter-spacing: 5px; color: #58585b;}
             filter: grayscale(100%);
 }
 
+.el360{position:fixed;width:100%;height:100%;background-color: rgba(95,95,93,0.2);opacity:0;z-index:-1;padding: 5% 15% ;left:0; overflow: scroll;}
+#el360{min-height: 100%; width: 100%; position: relative; padding: 10px;}
+#el360 .embed-container{margin-bottom: 10px;}
+.el360 .close-modal{ top: -50px; background: #fff; padding: 10px; right: 0;}
+#box360{background: #fff; padding: 15px;}
+a.btn-360{color: #000; text-transform: uppercase; letter-spacing: 2px;}
+a.btn-360.activo:hover,
+a.btn-360:hover{text-decoration: none;}
+a.btn-360 img{border: 1px solid #fff;}
+a.btn-360.activo img,
+a.btn-360:hover img{border: 1px solid #000;}
